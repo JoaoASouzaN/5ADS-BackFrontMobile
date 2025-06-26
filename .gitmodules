@@ -1,0 +1,9 @@
+[submodule "FrontEnd"]
+	path = FrontEnd
+	url = https://github.com/JoaoASouzaN/HandManFront.git
+[submodule "Mobile"]
+	path = Mobile
+	url = https://github.com/JoaoASouzaN/HandManMobile.git
+[submodule "BackEnd"]
+	path = BackEnd
+	url = https://github.com/JoaoASouzaN/HandManBack.git
