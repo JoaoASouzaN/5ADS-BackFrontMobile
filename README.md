@@ -10,7 +10,7 @@ Repositório destinado ao projeto para final da matéria de BackEnd do quinto pe
 
 ### Instruções:
 
-Para executar este projeto, baixe e instale o [VSCode](https://code.visualstudio.com/download), o [Node.js](https://nodejs.org/pt/download), [Git](https://git-scm.com/downloads/win) e o [ExpoGo](https://play.google.com/store/apps/details?id=host.exp.exponent) no seu celular.
+Para executar este projeto, baixe e instale o [VSCode](https://code.visualstudio.com/download), o [Node.js](https://nodejs.org/pt/download), [Git](https://git-scm.com/downloads/win) e o [ExpoGo](https://play.google.com/store/apps/details?id=host.exp.exponent) no seu celular. Tambem é necessario que você crie uma conta no sita do [ExpoGo](https://expo.dev/go), pois o login sera necessario mais para frente.
 
 Apos as instalações, crie uma pasta na sua area de trabalho, ou qualquer outra pasta que preferir, clique com o botao direito e selecione a opção "open git bash here", se voce estiver usando o Windows 11 ela pode esta "escondida" no "mostrar mais opções". Agora execute o seguinte comando ele ira fazer um clone do repositorio para o seu computador.
 
@@ -47,3 +47,33 @@ Ao instalar todas as dependencias você ja podera executar o projeto. Para isso,
 ![imagem 2 - Porção inferior direita da tela principal do VSCode.](TerminalVSCode.jpg "imagem 2 - Localização do seletor de terminais no VSCode. Porção inferior direita da tela.")
 
 ![imagem 3 - Porção inferior direita da tela principal do VSCode.](RenomearTerminal.jpg "imagem 3 - Clique com o botao direito em cima do terminal que vai ser renomeado. Porção inferior direita da tela.")
+
+Apos iniciar os outros terminais e escolher qual deles vai ser o responsavel pelo BackEnd, o do FrontEnd e o do Mobile. Execute os seguintes comandos nos respectivos terminais:
+
+#### BackEnd:
+```bash
+  cd BackEnd/
+  npm npm run dev
+```
+#### FrontEnd:
+```bash
+  cd FrontEnd/
+  npm run dev
+```
+#### Mobile:
+```bash
+  cd Mobile/
+  npm install expo
+```
+Agora sera necessario fazer o login com a sua conta expo, como na imagem 4 a seguir e no exemplo:
+![imagem 4 - Print do terminal do VSCode.](ExemploLoginExpo.jpg "imagem 4 - Digite seu email, de um enter e digite sua senha. Print do terminal do VSCode.")
+```bash
+  npx expo login
+  Log in to EAS with email or username (exit and run 'npx expo login --help' for other login options)
+  √ Email or username ... seu@Email.aqui(precione enter apos escrever o email)
+  √ Password ... sua-senha-aqui(precione enter apos escrever sua senha)
+```
+Apos fazer o login, abra o app do ExpoGo no seu celular. vá até scan QR code e digite o seguinte codigo no terminal do VSCode. Quando aparecer o QR code, aponte a camera do celular para ele e aguarde o aplicativo abrir no seu celular
+```bash
+  npx expo start
+```
