@@ -23,7 +23,27 @@ Em seguida, com o GitBash ainda aberto, use o comando:
 ```
 Ele deve aprir o VSCode para você.
 
-Com o VSCode aberto aperte as teclas **ctrl+shift+"**, este é o atalho para criar um novo terminal, o qual estara aberto na porção inferiror do VSCode. Exemplo na imagem a seguir:
+Com o VSCode aberto aperte as teclas **ctrl+shift+"**, este é o atalho para criar um novo terminal, o qual estara aberto na porção inferiror do VSCode. (Exemplo na imagem 1 a seguir):
 
-![Porção inferior da tela.](ExemploVSCode.jpg "Exemplo da localização do terminal no VSCode. Porção inferior da tela.")
+![imagem 1 - Porção inferior da tela principal do VSCode.](ExemploVSCode.jpg "imagem 1 - Exemplo da localização do terminal no VSCode. Porção inferior da tela.")
 
+No terminal, execute os seguites comandos e aguarde até finalizar a instalação das dependencias do BackEnd.
+```bash
+  cd BackEnd/
+  npm install
+```
+Em seguida, execute estes outros comandos e aguarde até finalizar a instalação das dependencias do FrontEnd.
+```bash
+  cd ../FrontEnd/
+  npm install
+```
+E por ultimo, execute estes comandos e aguarde até finalizar a instalação das dependencias do Mobile.
+```bash
+  cd ../Mobile/
+  npm install
+```
+Ao instalar todas as dependencias você ja podera executar o projeto. Para isso, inicie outros dois terminais usando o comando **ctrl+shift+"**, você vai poder navegar por eles ao clicar em um deles na lateral direita do terminal (Exemplo na imagem 2). Por padrao eles vem nomeados de forma generica, para uma maior organização voce pode renomea los clicando com o botao direito no nome do terminal. (Exemplo na imagem 3)
+
+![imagem 2 - Porção inferior direita da tela principal do VSCode.](TerminalVSCode.jpg "imagem 2 - Localização do seletor de terminais no VSCode. Porção inferior direita da tela.")
+
+![imagem 3 - Porção inferior direita da tela principal do VSCode.](RenomearTerminal.jpg "imagem 3 - Clique com o botao direito em cima do terminal que vai ser renomeado. Porção inferior direita da tela.")
